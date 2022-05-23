@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    block-size: 100vh;
+    scroll-snap-stop: always;
+    display: grid;
+    place-items: center;
+}
+
+
+/* 导航栏样式 */
+
+.col-xs-6 {
+    text-align: center;
+}
+
+.nav-img {
+    width: 32px;
+    height: 32px;
+    margin-top: 30%;
+    cursor: pointer;
+}
+
+
+/* 服务范围 */
+
+.fuwu-fanwei {
+    text-align: center;
+    height: 30%;
+    width: 100%;
+}
+
+.fuwu-fanwei>img {
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+    visibility: hidden;
+}
+
+
+/* 顶部固定导航栏 */
+
+.topNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+    display: none;
+}
+
+
+/* 卡片样式 */
+
+.cards {
+    height: 50%;
+}
+
+.cards-item {
+    visibility: hidden;
+}
+
+.cards p {
+    margin: 20px;
+    font-size: 16px;
+    color: #b4b4b4;
+}
+
+.div-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* successlist样式 */
+
+.successlist {
+    text-align: center;
+    height: 30%;
+    width: 100%;
+}
+
+.successlist>img {
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+    visibility: hidden;
+}
+
+.success-item {
+    visibility: hidden;
+    text-align: center;
+}
+
+.success-name {
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+
+.success-name:hover {
+    text-decoration: underline;
+}
+
+.chakan-img {
+    width: 80%;
+    border-top: 1px #b4b4b4 solid;
+    border-bottom: 1px #b4b4b4 solid;
+    margin-left: 10%;
+}
+
+.chakan-img img {
+    width: 40%;
+    cursor: pointer;
+}
+
+
+/* 合作伙伴 */
+
+.partner-more {
+    text-align: center;
+    height: 30%;
+    width: 100%;
+}
+
+.partner-more>img {
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+    visibility: hidden;
+}
+
+.partners-item {
+    visibility: hidden;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}

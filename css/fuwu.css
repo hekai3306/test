@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    block-size: 100vh;
+    scroll-snap-stop: always;
+    display: grid;
+    place-items: center;
+}
+
+
+/* 导航栏样式 */
+
+.col-xs-6 {
+    text-align: center;
+}
+
+.nav-img {
+    width: 32px;
+    height: 32px;
+    margin-top: 30%;
+    cursor: pointer;
+}
+
+
+/* 顶部固定导航栏 */
+
+.topNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}

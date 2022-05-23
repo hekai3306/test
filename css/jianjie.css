@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    block-size: 100vh;
+    scroll-snap-stop: always;
+    display: grid;
+    place-items: center;
+}
+
+
+/* 导航栏样式 */
+
+.col-xs-6 {
+    text-align: center;
+}
+
+.nav-img {
+    width: 32px;
+    height: 32px;
+    margin-top: 30%;
+    cursor: pointer;
+}
+
+
+/* 顶部固定导航栏 */
+
+.topNav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.row {
+    margin-bottom: 12px;
+}
+
+
+/* 简介 */
+
+.jianjie {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-left: 5px solid black;
+}
+
+.jianjie>h2 {
+    line-height: 40px;
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: 12px;
+}
+
+.navbar-text {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #918f8f;
+}
+
+.team-img img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.top-btn {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务范围</title>
+    <!-- 更换小图标 -->
+    <link href="../img/ico.png" rel="icon" type="image">
+    <link rel="stylesheet" href="../css/fuwu.css">
+    <!-- 引入animate动画 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 引入bootStrap样式 -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- 先引入jquery.js再引入bootStrap.js -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="topNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-5">
+                    <img src="../img/logo.svg" alt="" style="width: 90%;height: 75px;margin-top: 2%;">
+                </div>
+                <div class="col-xs-6 col-sm-7">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_index.svg" alt="" class="nav-img" onclick="changeRouter('index')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_jianjie.svg" alt="" class="nav-img" onclick="changeRouter('jianjie')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_fuwu.svg" alt="" class="nav-img" style="width: 65px;" onclick="changeRouter('fuwu')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_anli.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_zixun.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_lianxi.svg" alt="" class="nav-img" style="width: 65px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 服务范围 -->
+    <img src="../img/fuwu.jpg" alt="" style="width: 100%;">
+    <!-- 商业品牌 -->
+    <img src="../img/fuwushangye.jpg" alt="" style="width: 80%;margin-top: 50px;margin-left: 10%;">
+    <!-- 敏锐的品牌洞察 -->
+    <img src="../img/dongcha.jpg" alt="" style="width: 80%;margin-left: 10%;">
+    <!-- 商业设计 -->
+    <img src="../img/shangyesheji.jpg" alt="" style="width: 80%;margin-left: 10%;">
+    <!-- 详细设计 -->
+    <img src="../img/xiangxisheji.jpg" alt="" style="width: 80%;margin-left: 10%;">
+    <!-- 成功案例 -->
+    <img src="../img/gengduoanli.svg" alt="" style="width: 50%;height: 50px;margin-left: 25%;margin-top: 80px;margin-bottom: 60px;cursor: pointer;">
+    <!-- 底部 -->
+    <img src="../img/indexfooter.jpg" alt="" style="width: 100%;">
+    <!-- 回到顶部 -->
+    <img src="../img/top.svg" alt="" style="width: 50px;height: 50px;" class="top-btn">
+</body>
+<script>
+    // 导航
+    function changeRouter(path) {
+        window.location = `./${path}.html`
+    }
+    // 当鼠标移入到回到顶部按钮上
+    $('.top-btn').mouseenter(function() {
+        $(this).attr('src', '../img/top-select.svg')
+    })
+
+    // 当鼠标移出时恢复原样
+    $('.top-btn').mouseleave(function() {
+        $(this).attr('src', '../img/top.svg')
+    })
+
+    // 当屏幕高度到达500显示小火箭
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var sTop = $(document).scrollTop();
+            if (sTop > 500) {
+                $('.top-btn').css('visibility', 'visible');
+                $('.top-btn').addClass('animate__bounceIn animate__fadeInUp');
+            }
+            console.log()
+            if (sTop < 488 && $('.top-btn').css('visibility') == 'visible') {
+                $('.top-btn').addClass('animate__bounceIn animate__fadeOutUp');
+                setTimeout(() => {
+                    $('.top-btn').css('visibility', 'hidden');
+                    $('.top-btn').removeClass('animate__bounceIn animate__fadeInUp animate__fadeOutUp');
+                }, 500)
+            }
+        })
+    })
+
+    // 点击按钮时将屏幕回到0
+    $('.top-btn').click(function() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    })
+</script>
+
+</html>

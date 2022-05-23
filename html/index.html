@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 更换小图标 -->
+    <link href="../img/ico.png" rel="icon" type="image">
+    <title>重庆一亩良田装饰</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 引入animate动画 -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- 引入bootStrap样式 -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- 先引入jquery.js再引入bootStrap.js -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- 轮播图 -->
+    <section>
+        <div id="carouselExampleFade" style="width: 100%;height: 100vh;" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/swiper1.png" class="d-block w-100" style="width: 100%;height: 100vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/swiper2.png" class="d-block w-100" style="width: 100%;height: 100vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/swiper3.png" class="d-block w-100" style="width: 100%;height: 100vh;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- logo和导航栏区域 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-5">
+                    <img src="../img/logo.svg" alt="" style="width: 90%;height: 75px;margin-top: 2%;">
+                </div>
+                <div class="col-xs-6 col-sm-7">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_index.svg" alt="" class="nav-img" onclick="changeRouter('index')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_jianjie.svg" alt="" class="nav-img" onclick="changeRouter('jianjie')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_fuwu.svg" alt="" class="nav-img" style="width: 65px;" onclick="changeRouter('fuwu')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_anli.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_zixun.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_lianxi.svg" alt="" class="nav-img" style="width: 65px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fuwu-fanwei">
+            <img src="../img/fuwufanwei.svg" alt="">
+        </div>
+        <div class="cards">
+            <div class="cards-item">
+                <div class="col-xs-6 col-sm-4">
+                    <img src="../img/pingpaisheji.svg" alt="" style="height: 50px;">
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="../img/kongjiansheji.svg" alt="" style="height: 50px;">
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="../img/changdishigong.svg" alt="" style="height: 50px;">
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <div class="div-img">
+                        <img src="../img/swiper3.png" alt="" style="width: 100%;height: 280px;">
+                    </div>
+                    <p>
+                        BRAND—通过研究商业模式来定义品牌模式 提供优秀的品牌整合解决方案，令品牌长远发展，更具竞争力
+                    </p>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="../img/jiudiantu.jpg" alt="" style="width: 100%;height: 280px;">
+                    <p>
+                        跨越達筑，景观，室内等传统建筑領域设计专业的界限 同时也将跨越服务设计以及公共艺术领域的界限
+                    </p>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+                    <img src="../img/swiper3.png" alt="" style="width: 100%;height: 280px;">
+                    <p>
+                        稳定的团队+匠人手艺是完美施工的保障
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="successlist">
+            <img src="../img/chenggonganli.svg" alt="">
+        </div>
+        <div class="success-cards">
+            <div class="success-item">
+                <!-- 标题 -->
+                <div class="col-xs-6 col-sm-3" style="margin-left: 15%;">
+                    <img src="../img/shangyeti.svg" alt="" style="height: 50px;">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="../img/jiudian.svg" alt="" style="height: 50px;">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="../img/bangongshi.svg" alt="" style="height: 50px;">
+                </div>
+                <!-- 图片 -->
+                <div class="col-xs-6 col-sm-3" style="margin-left: 15%;">
+                    <img src="../img/swiper1.png" alt="" style="height: 196px;width: 90%;">
+                    <p class="success-name">鬼刀潮流</p>
+                    <p class="succexx-address">重庆 . 长寿区</p>
+                    <div class="chakan-img">
+                        <img src="../img/chakanxiangqing.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="../img/jiudiantu.jpg" alt="" style="height: 196px;width: 90%;">
+                    <p class="success-name">X巅峰电竞酒店</p>
+                    <p class="succexx-address">重庆 . 江北区</p>
+                    <div class="chakan-img">
+                        <img src="../img/chakanxiangqing.png" alt="">
+                    </div>
+                    <img src="../img/gengduoanli.svg" alt="" style="margin-top: 20%;width: 70%;cursor: pointer;">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img src="../img/bangongshitu.jpg" alt="" style="height: 196px;width: 90%;">
+                    <p class="success-name">广西华为代工厂办公室</p>
+                    <p class="succexx-address">广西 . 华为</p>
+                    <div class="chakan-img">
+                        <img src="../img/chakanxiangqing.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="partner-more">
+            <img src="../img/hezuohuoban.svg" alt="">
+        </div>
+        <div class="partners">
+            <div class="container partners-item">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/hangkong.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/hangtou.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/xuliushan.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/tianfukele.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/hongyadong.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/yufengtang.png" alt="">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/banma.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/yinglian.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/lifeturbo.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/shenkeji.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/aowei.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/shanhotel.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/dingyifeng.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/dalongwang.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/jiayantianxia.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/yuziwei.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/xiaotiane.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/xesprots.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/guihuasheji.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/xiaotiane.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/zongheng.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/yingtaoji.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/wanyoufengting.png" alt="">
+                    </div>
+                    <div class="col-xs-6 col-sm-2">
+                        <img src="../img/guidaochaoniu.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <img src="../img/indexfooter.jpg" alt="" style="width: 100%;height: 120px;">
+        </div>
+    </section>
+    <!-- 顶部导航栏，当下拉一屏之后置顶显示 -->
+    <div class="topNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-5">
+                    <img src="../img/logo.svg" alt="" style="width: 90%;height: 75px;margin-top: 2%;">
+                </div>
+                <div class="col-xs-6 col-sm-7">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_index.svg" alt="" class="nav-img" onclick="changeRouter('index')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_jianjie.svg" alt="" class="nav-img" onclick="changeRouter('jianjie')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_fuwu.svg" alt="" class="nav-img" style="width: 65px;" onclick="changeRouter('fuwu')">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_anli.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_zixun.svg" alt="" class="nav-img">
+                        </div>
+                        <div class="col-xs-6 col-sm-2">
+                            <img src="../img/nav_lianxi.svg" alt="" class="nav-img" style="width: 65px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+<script>
+    // 当页面结构渲染完成之后，监听滚动条
+    let topNavState = 0;
+    $(document).ready(function() {
+        // 监听滚动条事件
+        $(window).scroll(function() {
+            var sTop = $(document).scrollTop();
+            // 当达到500之后显示服务范围图片,1秒之后显示卡片视图
+            if (sTop >= 500) {
+                $('.fuwu-fanwei img').css('visibility', 'visible');
+                $('.fuwu-fanwei img').addClass('animate__bounceIn animate__fadeInUp');
+                setTimeout(() => {
+                    $('.cards-item').css('visibility', 'visible');
+                    $('.cards-item div').addClass('animate__bounceIn animate__fadeInUp');
+                }, 800)
+            }
+            // 当屏幕滚动到一屏之后(800)显示顶部固定的导航栏,如果小于800则需要隐藏
+            if (sTop >= 780) {
+                $('.topNav').css('display', 'block');
+                $('.topNav').addClass('animate__bounceIn animate__fadeInDown')
+                topNavState = 1;
+            }
+            // 当屏幕回滚到780以上，隐藏顶部导航栏
+            if (sTop < 780 && topNavState == 1) {
+                $('.topNav').addClass('animate__fadeOutUp');
+                setTimeout(() => {
+                    $('.topNav').removeClass('animate__bounceIn animate__fadeInDown animate__fadeOutUp');
+                    $('.topNav').css('display', 'none');
+                    topNavState = 2;
+                }, 500)
+            }
+
+            // 当屏幕高度达到1100时，显示成功案例
+            if (sTop >= 1100) {
+                $('.successlist img').css('visibility', 'visible');
+                $('.successlist img').addClass('animate__bounceIn animate__fadeInUp');
+                setTimeout(() => {
+                    $('.success-item').css('visibility', 'visible');
+                    $('.success-item div').addClass('animate__bounceIn animate__fadeInUp');
+                }, 800)
+            }
+
+            // 当屏幕到达1800时，显示合作伙伴
+            if (sTop >= 1800) {
+                $('.partner-more img').css('visibility', 'visible');
+                $('.partner-more img').addClass('animate__bounceIn animate__fadeInUp');
+                setTimeout(() => {
+                    $('.partners-item').css('visibility', 'visible');
+                    $('.partners-item div').addClass('animate__bounceIn animate__flipInX');
+                }, 900)
+            }
+        })
+    })
+
+    function changeRouter(path) {
+        window.location = `./${path}.html`;
+    }
+</script>
+
+</html>
